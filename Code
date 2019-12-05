@@ -1,0 +1,30 @@
+#include <iostream>
+#include <windows.h>
+
+using namespace std;
+
+int main() {
+
+	int number;
+	int music;
+
+	cout << "Please choose between option 1,2,3,4" << endl;
+	cin >> music;
+	/*Advanced option 1:
+	Partner up and create a jukebox for our next class Mafia game.*/
+
+	switch (music) {
+	case '1': 
+		PlaySound(TEXT("music.wav"), NULL, SND_FILENAME | SND_ASYNC);
+		break;
+
+	case '2':
+		cout << PlaySound(TEXT("clap.wav"), NULL, SND_FILENAME | SND_ASYNC); 
+		break;
+
+
+
+		
+	}
+	system("pause");
+}
